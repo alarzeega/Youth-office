@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="img/jhala.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >المجلس المحلي شباب الجميل</title>
+    <!--fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="almjles.css">
+</head>
+<!--ترحيب-->
+<div id="welcome-message" class="welcome-message">
+  <div class="modal-content">
+    <h2>مرحبا بك في موقعنا!</h2>
+    <p>نحن سعداء بوجودك معنا.</p>
+    <img src="img/photo_2024-08-17_12-46-57-removebg-preview.png" alt="">
+  </div>
+</div>
+<script>
+  const welcomeMessage = document.getElementById('welcome-message');
+window.onload = () => { 
+  welcomeMessage.style.display = 'block';
+  setTimeout(() => {
+    welcomeMessage.style.display = 'none';
+  }, 4000);
+};
+    </script>
+    <body>
+    <!--header start-->
+    <header class="navbar">
+      <div class="container navbar-content">
+          <div class="logo">
+              <img src="img/photo_2024-08-17_12-46-57-removebg-preview.png" alt="شعار الموقع">
+          </div>
+          
+<nav class="nav-links">
+  <a class="swa" href="#hero">الرئيسية</a>
+  <a href="#about">معلومات عنا</a>
+  <a href="#informion">أخبارنا</a>
+  <a href="#joining">نموذج التسجيل</a>
+  <a href="#call">تواصل معنا</a>
+</nav>
+<button id="toggle-button">🌙</button>
+
+<script>
+    const button = document.getElementById('toggle-button');
+    button.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('light-mode');
+        button.textContent = document.body.classList.contains('dark-mode') ? '☀️': '🌙';
+    });
+</script>
+          <div class="menu-toggle">☰</div>
+      </div>
+  </header>
+  <script>  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  let isToggle = false;
+  
+  menuToggle.addEventListener('click', () => {
+      if (isToggle) {
+          menuToggle.innerHTML = '☰';
+          isToggle = false;
+      } else {
+          menuToggle.innerHTML = 'X';
+          isToggle = true;
+      }
+      navLinks.classList.toggle('active');
+  });
+  
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });</script>
+
+     <!--header start-->
+     <section id="hero">
+      <div class="hero-content">
+          <h1>المجلس المحلي لشباب الجميل</h1>
+          <p>يمكنكم استخدام خدماتنا داخل الموقع</p>
+          <a href="#call" class="cta-button">تواصل معنا الآن</a>
+      </div>
+  </section>
+
+    <main>
+<!-- about star-->
+<section id="about">
+    <div class="container">
+        <h2 >معلومات عنا</h2>
+        <hr>
+        <div class="about-content">
+            <div class="col-1">
+                <h3>نشاء <span class="text-primary">المجالس المحلية </span>لشباب</h3>
+                <p>المجالس المحلية للشباب هي مجالس تتبع لوزارة الشباب
+                    وتخضع لإشرافها - أنشأت ونظم عملها بقرار مجلس وزراء
+                    حكومة الوحدة الوطنية رقم 680 لسنة 2021م</p>
+                    <h3>ماهي <span class="text-primary">المجالس المحلية  </span>لشباب</h3>
+                    <p>المجلس المحلي للشباب هو وعاء جامع ومركز لتكوين
+                        الشباب على المستوى المحلي ويضم كافة الشباب
+                        المقيمين في النطاق الجغرافي للهيئة المحلية ذكورا وإناثا</p>
+                        
+            </div>
+            <div class="col-2">
+                <h3>مما <span class="text-primary">تتكون المجالس المحلية </span>لشباب</h3>
+                <p>🔺منتسبي المجلس وهم الشباب الذين قدموا طلبات الانتساب للمجلس.</p>
+                <p>🔺يتقدم المنتسبون الذين تنطبق عليهم شروط النظام الداخلي للترشح.</p>
+                <p>🔺يحق للمجلس تكوين لجان تتم تشكيلها من أعضاء الهيئة    
+                    ومهمتها المساعدة في تخطيط وإعداد وتنفيذ المبادرات والمناشط
+                     والمشاريع الموجهة للشباب</p>
+                     <img class="moving" src="img/photo_2024-08-17_14-39-26-removebg-preview.png" >
+                     
+
+            </div>
+            <div class="col-3">
+                 <h3>اختصاصات <span class="text-primary">المجالس المحلية  </span>لشباب</h3>
+                <p>🔺المجالس المحلية للشباب تعطي الفرصة لشباب البلدية ذكورا وإناثا
+                    للمشاركة في صنع القرار ودعم جهود البلدية بما يفيد مصلحة البلدية
+                    وشيابها.
+                    أيضا تقوم المجالس المحلية بأدوار التوعية للشباب و تطوير قدراتهم في
+                    القيادة الإيجابية - وتكون منبر للشباب للتعبير عن آرائهم وطموحاتهم
+                    واهتمامهم وطرح مقترحاتهم فيما يخص السياسة العامة ومشاريع الإدارة
+                    المحلية للشباب.
+                    إضافة لأن المجالس المحلية للشباب تعزز من أدوار الشباب للمساهمة في
+                    صنع القرار على المستوى المحلي والوطني، سواء عن طريق الدراسات أو
+                    الاستشارات والرصد وتقديم التقارير حول قضايا الشباب وحقوقهم
+                    والمشاركة في إعداد الخطط التنموية الاستراتيجية للشباب والسياسات
+                    الحكومية المتعلقة بالشباب، أو حتى عن طريق حملات المناصرة لقضايا
+                    الشباب وخصوصا قضايا السلم المجتمعي.
+                    وغيرها من الاختصاصات التي من شأنها تمكين الشباب وجعلهم شريك في
+                    صنع القرار ويكون صوت الشباب مسموع</p>
+                    <hr>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- about end-->
+ <!--serves star-->
+<section class="new-1">
+<div class="news">
+<h2 id="informion">الاخبار</h2>
+<hr>
+</div>
+</section>
+ <div class="about-1">
+    <div class="cod">
+      <div class="card h-100">
+        <img src="img/111-06.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">/August 11th, 2024</h5>
+          <p class="card-text">تنفيذا لتوجيهات دولة المهندس عبد الحميد الدبيبة رئيس حكومة الوحدة الوطنية تشكيل غرفة ساند للجهود الشبابية المشتركة لطوارئ مدينة الكفرة.</p>
+        <button><a target="_blank" href="https://www.facebook.com/share/p/mXGTpjybzPD9BRXq/?mibextid=oFDknk"><p>الصفحة الرائسية</p></a></button>
+        </div>
+
+      </div>
+    </div>
+    <div class="cod-2">
+      <div class="card h-100">
+        <img src="img/2227-01.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">/August 7th, 2024</h5>
+          <p class="card-text">علن المجلس المحلي للشباب بلدية الجميل عن انطلاق التسجيل في مشروع "آفاق" والذي سيقدم سلسلة من الدورات التدريبية المجانية للشباب والشابات</p>
+          <button><a target="_blank" href="https://www.facebook.com/share/p/zGw1ZZD5wxVCm64u/?mibextid=oFDknk"><p>الصفحة الرائسية</p></a></button>
+
+        </div>
+      </div>
+    </div>
+    <div class="cod-3">
+      <div class="card h-100">
+        <img src="img/333.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">/july 7th, 2024</h5>
+          <p class="card-text">يعلن المجلس المحلي للشباب بلدية الجميل عن انطلاق التسجيل في مشروع "آفاق" والذي سيقدم سلسلة من الدورات التدريبية المجانية للشباب والشابات في المدينة سينطلق التسجيل بداية بتدريب...</p>
+          <button><a target="_blank" href="https://www.facebook.com/share/p/AvRiQ2jgcAbUx28E/?mibextid=WC7FNe"><p>الصفحة الرائسية</p></a></button>
+
+        </div>
+      </div>
+    </div>
+    <div class="cod-4">
+      <div class="card h-100">
+        <img src="img/204.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">/ May 7th, 2024</h5>
+          <p class="card-text">بيان تنديد المجلس المحلي للشباب بلدية الجميل</p>
+          <button><a target="_blank" href="https://www.facebook.com/share/p/d6JcmQKtHVxdtgFz/?mibextid=WC7FNe"><p>الصفحة الرائسية</p></a></button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+ <!--serves end-->
+
+    </main>
+    
+   <!--نموذج تسجيل-->
+   
+    <div id="joining"></div>
+  <h1 class="for-1">نموذج التسجيل</h1>
+<div class="bb-1">
+  <form >
+        
+        <fieldset id="">
+            <legend>نموذج التسجيل(التطوع)</legend>
+            <img src="img/photo_2024-08-17_12-46-57-removebg-preview.png" alt="">
+    <div class="form-1">
+        <label for="text">الاسم</label><br>
+        <input id="text" type="text" placeholder="أسمك رباعي" required>
+    </div><br><hr>
+    <div class="form-1">
+        <label for="phone">رقم الهاتف</label><br>
+        <input id="phone" type="tel" placeholder="رقمك" required>
+    </div><br><hr>
+    <div class="form-2">
+        <label for="text">الجنس</label><br>
+        <input id="text" type="radio" name="gender"  value="mela" checked>ذكر
+        <input id="text" type="radio"  name="gender"  value="female" checked >أنتى
+
+    </div><br><hr>
+    <div class="form-1">
+        <label for="phone">المواليد</label><br>
+        <input id="phone" type="date" placeholder="user name" required>
+    </div><br><hr>
+    <div class="form-1">
+        <label for="phone">(cv)المؤهل العلمي او</label><br>
+        <input id="phone" type="file" placeholder="شهادتك ان وجدت" >
+        </div><br><hr>
+
+    <div class="form-1">
+    <label for="membership-type">الحالة الاجتماعية</label><br>
+    <select id="membership-type" name="نوع العضوية" required> 
+        
+        <option value="individual">متزوج</option>
+        <option value="corporate">اعزب</option>
+        <option value="student">اخري</option>
+      </select>
+    </div><br><hr>
+    <div class="form-1">
+        <label for="reason">سبب الانضمام</label><br>
+
+        <textarea id="reason" name="reason" required></textarea>
+      </div><hr>
+      <div class="form-3">
+        <button type="submit">تقديم طلب</button>
+      </div>
+    </fieldset>
+  </form>
+</div>  
+<!--locision-->
+<div class="loci">
+  <h2>الموقع</h2>
+  <iframe class="loc-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.5945586618795!2d12.060121824536672!3d32.85598507363075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13abdf95cb313da7%3A0xc65185f06534ef40!2z2KjZhNiv2YrYqSDYp9mE2KzZhdmK2YQ!5e0!3m2!1sar!2sly!4v1724886845185!5m2!1sar!2sly" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!--نهاية الموقع-->
+<footer>
+<div class="footer">
+  <div id="call"></div>
+     <div class="container">
+        <img src="img/photo_2024-08-17_12-46-57-removebg-preview.png" >
+        <p>we are social /تواصل معانا</p>
+        <div class="social-icons">
+            <h3>الاتصال</h3>
+        <p>البريد الإلكتروني:*******@</p>
+        <p>الهاتف: 000-000</p>
+            <a target="_blank" href=""><img src="img/icons8-whatsapp-64.png"  ></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100088345591234&mibextid=ZbWKwL"><img src="img/icons8-facebook-64.png" ></a>
+            <a target="_blank" href=""><img src="img/icons8-gmail-64.png" ></a>
+        </div>
+      </div>
+      <div>
+        <h3>عن المجلس</h3>
+        <p>اتمني انكم  استفدتم من موقعنا </p>
+        <p>#شباب واعد لوطن صاعد</p>
+        <p class="copyright">&copy;2024 <span>[سياسة الخصوصية]</div></span>جميع الحقوق محفوظة</p>
+        <p class="copyright"><i><span>المجلس المحلي لشباب الجميل</div></span></i></p>
+    </div>
+    <div class="alarz"><hr>
+    <p>تم تصميم الموقع من قبل</p>
+  <p>م.علاء الدين محمود رزيق</p>
+  <i>alarzeeg</i>
+</div>
+</div>
+</footer>
+   </html>
